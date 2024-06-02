@@ -14,6 +14,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+
 app.MapControllers();
 app.UseExceptionHandler();
 app.UseSwagger();
