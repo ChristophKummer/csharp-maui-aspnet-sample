@@ -9,6 +9,11 @@ public partial class UsersPage : ContentPage
 	{
 		InitializeComponent();
 
+        var items = new List<CollectionItem>
+        {
+            new CollectionItem
+        }
+
         BindingContext = UsersPageModel.Instance;
     }
 

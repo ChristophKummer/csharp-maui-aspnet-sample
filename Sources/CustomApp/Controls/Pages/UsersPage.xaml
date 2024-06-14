@@ -11,12 +11,16 @@
             <ColumnDefinition />
             <ColumnDefinition Width="Auto"/>
         </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition/>            
+        </Grid.RowDefinitions>
 
         <Label Grid.Column="0"  VerticalTextAlignment="Center" HorizontalTextAlignment="End" TextColor="White">Rezepte</Label>
-        <Border Grid.Column="1" Background="#191919" StrokeThickness="2" Stroke="#D7C786"/>
+        <Border Grid.Column="1" Grid.Row="1" Background="#474747" StrokeThickness="2" Stroke="#202020"/>
         
-        <StackLayout Grid.Column="1" >
-            <Label FontSize="Micro" Margin="20,50,45,10" FontAttributes="Bold" FontFamily="Ubuntu" TextColor="White">Ausgewählte Zutaten:</Label>
+        <StackLayout Grid.Column="1" Grid.Row="1">
+            <Label FontSize="Micro" Margin="20,25,45,10" FontAttributes="Bold" FontFamily="Century Gothic" TextColor="White">Ausgewählte Zutaten:</Label>
             
             <ListView Margin="30,0,0,10">
                 <ListView.ItemTemplate>
