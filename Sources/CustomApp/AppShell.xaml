@@ -20,11 +20,11 @@
         <views:ShellFlyoutHeader />
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Zutat" Icon="icon50karotte.png" Route="ingredients" >
-        <ShellContent ContentTemplate="{DataTemplate pages:IngredientsPage}" />
+    <FlyoutItem Title="Zutaten" Icon="icon50karotte.png" Route="calculator" >
+        <ShellContent ContentTemplate="{DataTemplate pages:CalculatorPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Rezepte" Icon="icon100rezept.png" Route="recipe">
-        <ShellContent ContentTemplate="{DataTemplate pages:RecipesPage}" />
+    <FlyoutItem Title="Rezepte" Icon="icon100rezept.png" Route="users">
+        <ShellContent ContentTemplate="{DataTemplate pages:UsersPage}" />
     </FlyoutItem>
 
     <Shell.FlyoutFooter>

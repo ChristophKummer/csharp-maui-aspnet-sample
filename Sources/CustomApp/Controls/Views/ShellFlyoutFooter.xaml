@@ -6,9 +6,4 @@
     <ContentView.BindingContext>
         <models:ShellFlyoutFooterModel />
     </ContentView.BindingContext>
-    <StackLayout Margin="20">
-        <Label Text="CustomApp v0.0.1"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"/>
-    </StackLayout>
 </ContentView>

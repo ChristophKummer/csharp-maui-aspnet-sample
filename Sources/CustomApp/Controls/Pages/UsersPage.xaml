@@ -3,39 +3,35 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:models="clr-namespace:CustomApp.Models.Pages"
              x:Class="CustomApp.Controls.Pages.UsersPage"
-             Title="Users Page">
+             BackgroundImageSource="background_design_stretch.png"
+             Shell.NavBarIsVisible="false">
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
 
-    <StackLayout Spacing="20" Margin="20">
-        <Button Text="Reload users"
-                Clicked="OnReloadClicked"
-                IsEnabled="{Binding Path=IsReloadEnabled}"/>
-        <ActivityIndicator IsRunning="True"
-                           HorizontalOptions="Center"
-                           VerticalOptions="CenterAndExpand"
-                           IsVisible="{Binding Path=IsLoadVisible}"/>
-        <Label TextColor="Red"
-               HorizontalOptions="Center"
-               VerticalOptions="CenterAndExpand"
-               Text="{Binding Path=ErrorMessage}"
-               IsVisible="{Binding Path=IsErrorVisible}"/>
-        <ListView ItemSelected="OnIssueClicked"
-                  ItemsSource="{Binding Path=ItemList}"
-                  IsVisible="{Binding Path=IsListVisible}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Margin="20" Spacing="20"
-                                     Orientation="Horizontal">
-                            <Label Text="{Binding Path=FirstName}"/>
-                            <Label Text="{Binding Path=LastName}"/>
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-        <Button Text="Create user"
-                Clicked="OnCreateClicked"
-                IsEnabled="{Binding Path=IsCreateEnabled}"/>
-    </StackLayout>
+        <Label Grid.Column="0"  VerticalTextAlignment="Center" HorizontalTextAlignment="End" TextColor="White">Rezepte</Label>
+        <Border Grid.Column="1" Background="#191919" StrokeThickness="2" Stroke="#D7C786"/>
+        
+        <StackLayout Grid.Column="1" >
+            <Label FontSize="Micro" Margin="20,50,45,10" FontAttributes="Bold" FontFamily="Ubuntu" TextColor="White">Ausgewählte Zutaten:</Label>
+            
+            <ListView Margin="30,0,0,10">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="30,*" Padding="10">
+                            <Image Source="{Binding Icon}" Scale="0.7" VerticalOptions="Center"/>
+                            <Label Text="{Binding Title}" Padding="10" TextColor="White" Grid.Column="1" VerticalOptions="Center"/>
+                        </Grid>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+        </StackLayout>
+    </Grid>
+
+
 
 </ContentPage>

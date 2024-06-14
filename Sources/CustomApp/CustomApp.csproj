@@ -58,6 +58,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\background_design.png" />
+	  <None Remove="Resources\Images\background_design_stretch.png" />
 	  <None Remove="Resources\Images\gericht_a.jpg" />
 	  <None Remove="Resources\Images\gericht_b.jpg" />
 	  <None Remove="Resources\Images\gericht_c.jpg" />
