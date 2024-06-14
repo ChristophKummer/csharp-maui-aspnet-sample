@@ -1,3 +1,4 @@
+using CustomApp.Models;
 using CustomApp.Models.Pages;
 using CustomLib.Models.Users;
 
@@ -9,10 +10,13 @@ public partial class UsersPage : ContentPage
 	{
 		InitializeComponent();
 
-        var items = new List<CollectionItem>
+        /*var items = new List<Ingredient>
         {
-            new CollectionItem
-        }
+            new Ingredient { IngredientName = "Karotte", Icon = "icon50karotte.png"},
+            new Ingredient { IngredientName = "Steak", Icon = "icon50fleisch"}
+        };
+
+        listView.ItemsSource= items;  */ 
 
         BindingContext = UsersPageModel.Instance;
     }
