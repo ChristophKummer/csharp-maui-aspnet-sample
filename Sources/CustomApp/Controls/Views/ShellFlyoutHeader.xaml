@@ -7,8 +7,4 @@
     <ContentView.BindingContext>
         <models:ShellFlyoutHeaderModel />
     </ContentView.BindingContext>
-    <Grid>
-        <Image Aspect="AspectFill"
-               Source="dotnet_bot.png" />
-    </Grid>
 </ContentView>

@@ -57,6 +57,21 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\background_design.png" />
+	  <None Remove="Resources\Images\gericht_a.jpg" />
+	  <None Remove="Resources\Images\gericht_b.jpg" />
+	  <None Remove="Resources\Images\gericht_c.jpg" />
+	  <None Remove="Resources\Images\gericht_d.jpg" />
+	  <None Remove="Resources\Images\gericht_e.jpg" />
+	  <None Remove="Resources\Images\gericht_g.jpg" />
+	  <None Remove="Resources\Images\gericht_h.jpg" />
+	  <None Remove="Resources\Images\gericht_i.jpg" />
+	  <None Remove="Resources\Images\gericht_j.jpg" />
+	  <None Remove="Resources\Images\icon100rezept.png" />
+	  <None Remove="Resources\Images\icon50karotte.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
@@ -107,6 +122,10 @@
 	  <MauiXaml Update="Controls\Views\ShellFlyoutHeader.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Resources\Images\Icons\" />
 	</ItemGroup>
 
 </Project>

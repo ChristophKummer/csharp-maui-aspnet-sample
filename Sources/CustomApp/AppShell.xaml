@@ -5,22 +5,26 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:pages="clr-namespace:CustomApp.Controls.Pages"
     xmlns:views="clr-namespace:CustomApp.Controls.Views"
-    FlyoutBackgroundColor="LightBlue"
-    FlyoutBehavior="Locked"
-    Title="CustomApp">
+    FlyoutBackgroundColor="#474747">
 
+    <Shell.ItemTemplate>
+        <DataTemplate>
+            <Grid ColumnDefinitions="30,*" Padding="10">
+                <Image Source="{Binding Icon}" Scale="0.7" VerticalOptions="Center"/>
+                <Label Text="{Binding Title}" Padding="10" TextColor="White" Grid.Column="1" VerticalOptions="Center"/>
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+    
     <Shell.FlyoutHeader>
         <views:ShellFlyoutHeader />
     </Shell.FlyoutHeader>
 
-    <FlyoutItem Title="Calculator" Icon="user.png" Route="calculator">
-        <ShellContent ContentTemplate="{DataTemplate pages:CalculatorPage}" />
+    <FlyoutItem Title="Zutat" Icon="icon50karotte.png" Route="ingredients" >
+        <ShellContent ContentTemplate="{DataTemplate pages:IngredientsPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Users" Icon="user.png" Route="users">
-        <ShellContent ContentTemplate="{DataTemplate pages:UsersPage}" />
-    </FlyoutItem>
-    <FlyoutItem Title="Issues" Icon="issue.png" Route="issues">
-        <ShellContent ContentTemplate="{DataTemplate pages:IssuesPage}" />
+    <FlyoutItem Title="Rezepte" Icon="icon100rezept.png" Route="recipe">
+        <ShellContent ContentTemplate="{DataTemplate pages:RecipesPage}" />
     </FlyoutItem>
 
     <Shell.FlyoutFooter>
