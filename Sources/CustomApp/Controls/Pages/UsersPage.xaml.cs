@@ -10,15 +10,16 @@ public partial class UsersPage : ContentPage
 	{
 		InitializeComponent();
 
-        /*var items = new List<Ingredient>
-        {
-            new Ingredient { IngredientName = "Karotte", Icon = "icon50karotte.png"},
-            new Ingredient { IngredientName = "Steak", Icon = "icon50fleisch"}
-        };
-
-        listView.ItemsSource= items;  */ 
+       
 
         BindingContext = UsersPageModel.Instance;
+        var items = new List<Ingredient>
+        {
+            new Ingredient { IngredientName = "Karotte", Icon = "icon50karotte.png"},
+            new Ingredient { IngredientName = "Steak", Icon = "icon50fleisch.png"}
+        };
+
+        
     }
 
     private void OnReloadClicked(object sender, EventArgs e)
