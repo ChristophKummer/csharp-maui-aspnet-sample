@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using CommunityToolkit.Maui.Markup;
+using Microsoft.Extensions.Logging;
 
 namespace CustomApp
 {
@@ -8,7 +9,7 @@ namespace CustomApp
         {
             // Create builder
             var builder = MauiApp.CreateBuilder();
-
+            builder.UseMauiApp<App>().UseMauiCommunityToolkitMarkup();
             // Configure application
             builder.UseMauiApp<App>();
 

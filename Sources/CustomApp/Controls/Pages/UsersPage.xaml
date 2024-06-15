@@ -16,6 +16,15 @@
             <RowDefinition/>            
         </Grid.RowDefinitions>
 
+        <!-- Rezpetübersicht-->
+        <ScrollView Orientation="Vertical" Grid.Column="0" Grid.Row="1">
+            <FlexLayout Direction="Row" Wrap="Wrap" AlignContent="Start">
+                
+            </FlexLayout>
+        </ScrollView>    
+        <!-- Rezpetübersicht bis hier-->
+
+        <!-- Ausgewählte Zutaten-->
         <Label Grid.Column="0"  VerticalTextAlignment="Center" HorizontalTextAlignment="End" TextColor="White">Rezepte</Label>
         <Border Grid.Column="1" Grid.Row="1" Background="#474747" StrokeThickness="2" Stroke="#202020"/>
         
@@ -31,9 +40,9 @@
                         </Grid>
                     </DataTemplate>
                 </ListView.ItemTemplate>
-            </ListView> 
-            
+            </ListView>             
         </StackLayout>
+        <!-- Ausgewählte Zutaten bis hier-->
     </Grid>
 
 
