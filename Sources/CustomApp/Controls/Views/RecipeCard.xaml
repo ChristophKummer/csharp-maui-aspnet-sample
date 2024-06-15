@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView 
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CustomApp.Controls.Views.RecipeCard">
+    
+             <Frame Margin="10" HeightRequest="210" WidthRequest="180" Grid.Column="0" Grid.Row="1" CornerRadius="5" BackgroundColor="#FBFBFB">
+                <StackLayout Orientation="Vertical">
+                    <Image Source="{Binding Gerichtfoto}" WidthRequest="150" Margin="0,0,5,0"/>
+                    <StackLayout VerticalOptions="Center">
+                        <Label
+                                Margin="0,15,0,0"
+                                FontSize="Micro"
+                                FontAttributes="Bold"
+                                FontFamily="Century Gothic"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Text="{Binding Gerichtname}"
+                                />
+                        <Label
+                                Margin="0,0,0,0"
+                                FontSize="Default"
+                                FontAttributes="None"
+                                FontFamily="default"
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Text="{Binding Zubereitungszeit}"
+                                />
+                    </StackLayout>
+                </StackLayout>
+             </Frame>
+</ContentView>

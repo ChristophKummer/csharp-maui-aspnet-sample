@@ -16,11 +16,50 @@
             <RowDefinition/>            
         </Grid.RowDefinitions>
 
+
+        <Frame HeightRequest="210" WidthRequest="180" Grid.Column="0" Grid.Row="1" CornerRadius="5" BackgroundColor="#FBFBFB">
+            <StackLayout Orientation="Vertical">
+                <Image Source="gericht_a.jpg" WidthRequest="150" Margin="0,0,5,0"/>
+                <StackLayout VerticalOptions="Center">
+                    <Label
+                        Margin="0,15,0,0"
+                        FontSize="Micro"
+                        FontAttributes="Bold"
+                        FontFamily="Century Gothic"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="Gericht A"
+                        />
+                    <Label
+                        Margin="0,0,0,0"
+                        FontSize="Default"
+                        FontAttributes="None"
+                        FontFamily="default"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="~20 min"
+                        />
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+
         <!-- Rezpetübersicht-->
         <ScrollView Orientation="Vertical" Grid.Column="0" Grid.Row="1">
-            <FlexLayout Direction="Row" Wrap="Wrap" AlignContent="Start">
+            <!--<StackLayout>
+                <Label
+                        Margin="0,15,0,0"
+                        FontSize="Micro"
+                        FontAttributes="Bold"
+                        FontFamily="Century Gothic"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center"
+                        Text="Hauptgerichte"
+                        />-->
+                <FlexLayout Direction="Row" Wrap="Wrap" AlignContent="Start">
                 
-            </FlexLayout>
+                </FlexLayout>
+            <!--</StackLayout>-->
         </ScrollView>    
         <!-- Rezpetübersicht bis hier-->
 
