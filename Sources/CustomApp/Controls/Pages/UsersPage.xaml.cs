@@ -8,18 +8,14 @@ public partial class UsersPage : ContentPage
 {
     public UsersPage()
 	{
-		InitializeComponent();
-
-       
+		InitializeComponent();       
 
         BindingContext = UsersPageModel.Instance;
         var items = new List<Ingredient>
         {
             new Ingredient { IngredientName = "Karotte", Icon = "icon50karotte.png"},
             new Ingredient { IngredientName = "Steak", Icon = "icon50fleisch.png"}
-        };
-
-        
+        };        
     }
 
     private void OnReloadClicked(object sender, EventArgs e)

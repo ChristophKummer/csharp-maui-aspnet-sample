@@ -100,6 +100,9 @@
 	  <Compile Update="Controls\Pages\UsersPage.xaml.cs">
 	    <DependentUpon>UsersPage.xaml</DependentUpon>
 	  </Compile>
+	  <Compile Update="Controls\Views\RecipeCardView.xaml.cs">
+	    <DependentUpon>RecipeCardView.xaml</DependentUpon>
+	  </Compile>
 	</ItemGroup>
 
 	<ItemGroup>
@@ -118,7 +121,13 @@
 	  <MauiXaml Update="Controls\Pages\UserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Controls\Views\RecipeCard.xaml">
+	  <MauiXaml Update="Controls\Pages\Wuascht.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\Views\CardView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\Views\RecipeCardView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Controls\Views\ShellFlyoutFooter.xaml">

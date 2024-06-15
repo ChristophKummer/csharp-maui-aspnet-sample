@@ -26,7 +26,13 @@
     <MauiXaml Update="Controls\Pages\UserPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Controls\Views\RecipeCard.xaml">
+    <MauiXaml Update="Controls\Pages\Wuascht.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Controls\Views\CardView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="Controls\Views\RecipeCardView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
     <MauiXaml Update="Controls\Views\ShellFlyoutFooter.xaml">
